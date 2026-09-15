@@ -608,8 +608,10 @@ section {
   flex: none;
   width: 72px; height: 72px;
   display: flex; align-items: center; justify-content: center;
+  transition: transform 0.18s ease;
 }
 .cert-badge img { width: 100%; height: 100%; object-fit: contain; }
+.cert-badge:hover { transform: scale(1.06); }
 
 .cert-card h3 { font-size: 1.05rem; margin-bottom: 4px; }
 .cert-card .cert-issuer { font-size: 0.84rem; color: var(--text-soft); margin-bottom: 8px; }
@@ -623,7 +625,10 @@ section {
   background: rgba(14, 165, 160, 0.08);
   padding: 4px 10px;
   border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.18s ease;
 }
+a.cert-id:hover { background: rgba(14, 165, 160, 0.18); }
 
 .cert-list {
   background: var(--surface);
