@@ -367,34 +367,45 @@
 .pd-diagram svg { width: 100%; height: auto; display: block; }
 .pd-diagram figcaption { font-size: 0.8rem; color: var(--text-soft); margin-top: 14px; }
 
-/* ---------- Team & tools ---------- */
-.pd-team {
+/* ---------- Tools & techniques ---------- */
+.pd-toolkit {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  gap: 18px;
 }
-.pd-member {
-  background: var(--surface);
+.pd-tool-group {
+  background: var(--bg);
   border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  padding: 20px;
-  text-align: center;
+  border-radius: var(--radius-lg);
+  padding: 22px;
 }
-.pd-member .count {
-  font-family: "Sora", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, var(--blue-500), var(--cyan-400));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  line-height: 1.1;
+.pd-tool-group .step-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--blue-500);
+  background: rgba(14, 165, 160, 0.1);
+  padding: 3px 8px;
+  border-radius: 6px;
+  margin-bottom: 14px;
 }
-.pd-member strong { display: block; font-size: 0.9rem; color: var(--navy-900); margin-top: 6px; }
-.pd-member span { font-size: 0.8rem; color: var(--text-soft); }
+.pd-tool-group ul { display: grid; gap: 14px; }
+.pd-tool-group li strong { display: block; font-size: 0.92rem; color: var(--navy-900); margin-bottom: 2px; }
+.pd-tool-group li span { display: block; font-size: 0.82rem; color: var(--text-muted); line-height: 1.45; }
 
 .pd-tools { margin-top: 28px; }
 .pd-tools h3 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-soft); margin-bottom: 12px; }
+
+.pd-team-strip {
+  margin: 28px 0 0;
+  padding-top: 18px;
+  border-top: 1px dashed var(--border);
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+.pd-team-strip strong { color: var(--navy-900); }
 
 /* ---------- Bottom nav ---------- */
 .pd-next {
@@ -412,7 +423,7 @@
   .pd-cards { grid-template-columns: 1fr; }
   .pd-flow { grid-template-columns: 1fr; }
   .pd-flow-step::after { top: auto; bottom: -12px; right: 50%; transform: rotate(135deg); }
-  .pd-team { grid-template-columns: repeat(2, 1fr); }
+  .pd-toolkit { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 700px) {
@@ -426,6 +437,7 @@
   .pd-hero { padding: 48px 0 44px; }
   .pd-section { padding: 60px 0; }
   .pd-stats { grid-template-columns: repeat(2, 1fr); }
+  .pd-toolkit { grid-template-columns: 1fr; }
   .pd-diagram, .pd-figure.pad { padding: 18px; }
   .pd-figure.pad figcaption { margin: 18px -18px -18px; }
 }
