@@ -362,7 +362,9 @@ section {
   border-radius: 20px;
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 5;
+  /* Source photo is square (800x800) — a 4/5 frame with object-fit:cover
+     silently clipped 20% of the width, cutting the shoulders off. */
+  aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 
