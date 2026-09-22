@@ -11,7 +11,7 @@
 <meta property="og:url" content="https://portfoliosf.aochoamx.workers.dev/">
 <meta property="og:title" content="Antonio Ochoa — IT Project Manager &amp; Product Owner">
 <meta property="og:description" content="11 years delivering enterprise IT &amp; Telecom projects for NTT Data, Grupo México Transportes and TATA. PMP® and PSM I certified.">
-<meta property="og:image" content="https://portfoliosf.aochoamx.workers.dev/images/og-card.png">
+<meta property="og:image" content="https://portfoliosf.aochoamx.workers.dev/images/og-card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Antonio Ochoa — IT Project Manager and Product Owner">
@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Antonio Ochoa — IT Project Manager &amp; Product Owner">
 <meta name="twitter:description" content="11 years delivering enterprise IT &amp; Telecom projects for NTT Data, Grupo México Transportes and TATA. PMP® and PSM I certified.">
-<meta name="twitter:image" content="https://portfoliosf.aochoamx.workers.dev/images/og-card.png">
+<meta name="twitter:image" content="https://portfoliosf.aochoamx.workers.dev/images/og-card.jpg">
 
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
@@ -29,8 +29,31 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Antonio Ochoa Cerón",
+  "alternateName": "Antonio Ochoa",
+  "jobTitle": "IT Project Manager",
+  "description": "IT & Telecom Project Manager and Product Owner with 11 years leading enterprise projects. PMP and PSM I certified.",
+  "url": "https://portfoliosf.aochoamx.workers.dev/",
+  "image": "https://portfoliosf.aochoamx.workers.dev/images/profile-photo.jpg",
+  "email": "mailto:aochoamx@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Mexico City", "addressCountry": "MX" },
+  "knowsLanguage": ["es", "en"],
+  "hasCredential": [
+    { "@type": "EducationalOccupationalCredential", "name": "Project Management Professional (PMP)", "credentialCategory": "certification", "recognizedBy": { "@type": "Organization", "name": "Project Management Institute" }, "url": "https://www.credly.com/badges/3a73d89c-10b9-4aa2-80af-96a538b14071" },
+    { "@type": "EducationalOccupationalCredential", "name": "Professional Scrum Master I (PSM I)", "credentialCategory": "certification", "recognizedBy": { "@type": "Organization", "name": "Scrum.org" }, "url": "https://www.credly.com/badges/aee36dc9-8a92-43cd-8da9-2d4babbbb78f" }
+  ],
+  "sameAs": ["https://www.linkedin.com/in/aochoamx1"]
+}
+</script>
 </head>
 <body>
+
+<a class="skip-link" href="#profile">Skip to content</a>
 
 <header class="navbar">
   <div class="container">
@@ -41,7 +64,7 @@
         <span class="brand-tag">Project Portfolio</span>
       </span>
     </a>
-    <nav class="nav-links">
+    <nav class="nav-links" id="primary-nav" aria-label="Primary">
       <a href="#profile">Profile</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
@@ -49,9 +72,9 @@
       <a href="#contact">Contact</a>
     </nav>
     <div class="nav-cta">
-      <a href="Antonio-Ochoa-CV.pdf" class="btn btn-primary" download><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> Download CV</a>
+      <a href="Antonio-Ochoa-CV.pdf" class="btn btn-primary" download><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> <span class="btn-label">Download CV</span></a>
     </div>
-    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
   </div>
 </header>
 
@@ -95,7 +118,7 @@
 
       <div class="hero-card">
         <div class="hero-photo-frame">
-          <img src="images/profile-photo.jpg" alt="Portrait of Antonio Ochoa">
+          <img src="images/profile-photo.jpg" alt="Portrait of Antonio Ochoa" width="800" height="800" fetchpriority="high">
         </div>
       </div>
 
@@ -172,17 +195,21 @@
         <div class="info-card">
           <h4>Quick Facts</h4>
           <div class="info-row"><span>Based in</span><span>Mexico City, Mexico</span></div>
-          <div class="info-row"><span>Experience</span><span>10+ years</span></div>
+          <div class="info-row"><span>Experience</span><span>11 yrs as PM · 20+ in IT</span></div>
+          <div class="info-row"><span>Education</span><span>B.Eng. Computer Systems</span></div>
           <div class="info-row"><span>Certifications</span><span>PMP®, PSM I</span></div>
           <div class="info-row"><span>Frameworks</span><span>PMI &amp; Scrum / Agile</span></div>
-          <div class="info-row"><span>Languages</span><span>English, Spanish</span></div>
+          <div class="info-row"><span>Languages</span><span>Spanish (native), English (professional)</span></div>
+          <div class="info-row"><span>Work mode</span><span>Remote or hybrid · CDMX</span></div>
           <div class="info-row"><span>Email</span><span>aochoamx@gmail.com</span></div>
 
           <ul class="timeline-mini">
             <li><span class="yr">2025–26</span><div><span class="role">Client Project Manager</span><span class="co">NTT Data — Telecommunications</span></div></li>
             <li><span class="yr">2018–25</span><div><span class="role">Project &amp; Product Manager</span><span class="co">GMXT — Ferromex</span></div></li>
             <li><span class="yr">2015–18</span><div><span class="role">Project Manager</span><span class="co">DUMAGO Inc.</span></div></li>
-            <li><span class="yr">2002–14</span><div><span class="role">Business Analyst → Developer</span><span class="co">TATA · UANL · INFOTEC</span></div></li>
+            <li><span class="yr">2014–15</span><div><span class="role">IT Project Manager</span><span class="co">UANL</span></div></li>
+            <li><span class="yr">2008–13</span><div><span class="role">Business Analyst</span><span class="co">TATA</span></div></li>
+            <li><span class="yr">2002–08</span><div><span class="role">System Developer</span><span class="co">INFOTEC</span></div></li>
           </ul>
         </div>
       </aside>
@@ -204,8 +231,8 @@
         <!-- Project 1 -->
         <article class="project-card">
           <div class="project-media">
-            <span class="project-client"><img src="images/logo-grupo-mexico.png" alt="Grupo México Transportes">GMXT · Ferromex</span>
-            <img src="images/project-simex-rail.jpg" alt="Intermodal rail terminal operations">
+            <span class="project-client"><img src="images/logo-grupo-mexico.png" alt="Grupo México Transportes" width="500" height="214" loading="lazy">GMXT · Ferromex</span>
+            <img src="images/project-simex-rail.jpg" alt="Intermodal rail terminal operations" width="1000" height="546" loading="lazy">
           </div>
           <div class="project-body">
             <div class="project-title-row">
@@ -214,12 +241,14 @@
             </div>
             <p class="project-scope">Migration of a legacy desktop application to mobile, tracking In-Gate, Out-Gate, Train-Load and Train-Unload events across 12 intermodal rail terminals.</p>
             <div class="project-meta">
+              <div><span class="m-label">Role</span><span class="m-val">Project &amp; Product Manager</span></div>
               <div><span class="m-label">Budget</span><span class="m-val">$200,000 USD</span></div>
               <div><span class="m-label">Duration</span><span class="m-val">9 months</span></div>
               <div><span class="m-label">Delivered</span><span class="m-val">2024–2025</span></div>
             </div>
             <div class="project-impact"><strong>Challenge solved:</strong> many stakeholders and a combined software + hardware scope — aligned through a clear mobile-technology vision for terminal operations.</div>
-            <div class="project-tags" style="margin-top:16px;">
+            <div class="project-impact project-result"><strong>Result:</strong> mobile app live across all 12 intermodal terminals, replacing the legacy desktop workflow for In-Gate, Out-Gate, Train-Load and Train-Unload events.</div>
+            <div class="project-tags">
               <span class="tag">Stakeholder Mgmt</span>
               <span class="tag">Budget Ownership</span>
               <span class="tag tag-cyan">Mobile / Networking</span>
@@ -230,19 +259,21 @@
         <!-- Project 2 -->
         <article class="project-card">
           <div class="project-media">
-            <span class="project-client"><img src="images/logo-grupo-mexico.png" alt="Grupo México Transportes">GMXT · Ferromex</span>
-            <img src="images/project-simex-mr.jpg" alt="Technician performing container maintenance and repair work">
+            <span class="project-client"><img src="images/logo-grupo-mexico.png" alt="Grupo México Transportes" width="500" height="214" loading="lazy">GMXT · Ferromex</span>
+            <img src="images/project-simex-mr.jpg" alt="Technician performing container maintenance and repair work" width="1000" height="667" loading="lazy">
           </div>
           <div class="project-body">
             <h3>SIMEX M&amp;R — Container Maintenance &amp; SAP Integration</h3>
             <p class="project-scope">Major upgrade of Ferromex's container and chassis Maintenance &amp; Repair system, integrated with SAP Inventory Management across 12 intermodal rail terminals.</p>
             <div class="project-meta">
+              <div><span class="m-label">Role</span><span class="m-val">Project &amp; Product Manager</span></div>
               <div><span class="m-label">Budget</span><span class="m-val">$150,000 USD</span></div>
               <div><span class="m-label">Duration</span><span class="m-val">12 months</span></div>
               <div><span class="m-label">Delivered</span><span class="m-val">2023–2024</span></div>
             </div>
             <div class="project-impact"><strong>Challenge solved:</strong> SAP inventory setup, system interconnection via web services and large-scale data loading — carried by hands-on process analysis, UX/UI design and SAP knowledge.</div>
-            <div class="project-tags" style="margin-top:16px;">
+            <div class="project-impact project-result"><strong>Result:</strong> upgraded M&amp;R system in production across 12 terminals, with container and chassis inventory synchronized to SAP Inventory Management through web services.</div>
+            <div class="project-tags">
               <span class="tag">Process Analysis</span>
               <span class="tag">Stakeholder Influence</span>
               <span class="tag tag-cyan">SAP Integration</span>
@@ -253,19 +284,21 @@
         <!-- Project 3 -->
         <article class="project-card">
           <div class="project-media">
-            <span class="project-client"><img src="images/logo-ntt-data.jpg" alt="NTT Data">Amazon</span>
-            <img src="images/project-vc-rooms.jpg" alt="Enterprise videoconference room with Cisco equipment">
+            <span class="project-client"><img src="images/logo-ntt-data.jpg" alt="NTT Data" width="400" height="190" loading="lazy">NTT Data · for Amazon</span>
+            <img src="images/project-vc-rooms.jpg" alt="Enterprise videoconference room with Cisco equipment" width="1000" height="988" loading="lazy">
           </div>
           <div class="project-body">
             <h3>Enterprise Videoconference Rooms Rollout</h3>
             <p class="project-scope">Installation of 12 videoconference rooms equipped with Cisco hardware for a global enterprise client.</p>
             <div class="project-meta">
+              <div><span class="m-label">Role</span><span class="m-val">Client Project Manager</span></div>
               <div><span class="m-label">Budget</span><span class="m-val">$100,000 USD</span></div>
               <div><span class="m-label">Duration</span><span class="m-val">4 months</span></div>
               <div><span class="m-label">Delivered</span><span class="m-val">09 / 2025</span></div>
             </div>
             <div class="project-impact"><strong>Challenge solved:</strong> remote locations, mid-renovation floors and hardware supply constraints — resolved with a temporary setup that kept installation on schedule.</div>
-            <div class="project-tags" style="margin-top:16px;">
+            <div class="project-impact project-result"><strong>Result:</strong> all 12 rooms installed and operational within the 4-month window, with no schedule slip despite renovation and supply constraints.</div>
+            <div class="project-tags">
               <span class="tag">Risk Management</span>
               <span class="tag">Expectation Mgmt</span>
               <span class="tag tag-cyan">Compatibility Validation</span>
@@ -276,19 +309,21 @@
         <!-- Project 4 -->
         <article class="project-card">
           <div class="project-media">
-            <span class="project-client"><img src="images/logo-ntt-data.jpg" alt="NTT Data">Megacable</span>
-            <img src="images/project-cisco-ise.jpg" alt="Cisco Identity Services Engine icon">
+            <span class="project-client"><img src="images/logo-ntt-data.jpg" alt="NTT Data" width="400" height="190" loading="lazy">NTT Data · for Megacable</span>
+            <img src="images/project-cisco-ise.jpg" alt="Cisco Identity Services Engine icon" width="1000" height="713" loading="lazy">
           </div>
           <div class="project-body">
             <h3>Cisco ISE Upgrade — Network Security</h3>
             <p class="project-scope">Upgrade of Cisco Identity Services Engine (ISE) to secure network and application access for a major telecom client.</p>
             <div class="project-meta">
+              <div><span class="m-label">Role</span><span class="m-val">Client Project Manager</span></div>
               <div><span class="m-label">Budget</span><span class="m-val">$100,000 USD</span></div>
               <div><span class="m-label">Duration</span><span class="m-val">3 months</span></div>
               <div><span class="m-label">Delivered</span><span class="m-val">2026</span></div>
             </div>
-            <div class="project-impact"><strong>Challenge solved:</strong> migration of the new server to the cloud — led with hands-on cloud knowledge to keep the security upgrade on track.</div>
-            <div class="project-tags" style="margin-top:16px;">
+            <div class="project-impact"><strong>Challenge solved:</strong> the identity server had to move to a new cloud-hosted instance while validating compatibility with the client's existing network and access policies — led hands-on with AWS knowledge to keep the security upgrade on track.</div>
+            <div class="project-impact project-result"><strong>Result:</strong> ISE upgrade completed with the new cloud-hosted server in production, securing network and application access for the telecom client.</div>
+            <div class="project-tags">
               <span class="tag">Negotiation</span>
               <span class="tag tag-cyan">AWS</span>
               <span class="tag tag-cyan">Compatibility Validation</span>
@@ -299,19 +334,21 @@
         <!-- Project 5 -->
         <article class="project-card">
           <div class="project-media">
-            <span class="project-client">Cinépolis · Cisco Meraki</span>
-            <img src="images/project-meraki-cameras.jpg" alt="Cisco Meraki smart camera lineup">
+            <span class="project-client"><img src="images/logo-ntt-data.jpg" alt="NTT Data" width="400" height="190" loading="lazy">NTT Data · for Cinépolis</span>
+            <img src="images/project-meraki-cameras.jpg" alt="Cisco Meraki smart camera lineup" width="1000" height="658" loading="lazy">
           </div>
           <div class="project-body">
             <h3>Meraki AI Cameras — Data Analytics</h3>
             <p class="project-scope">Deployment of an AI-powered camera analytics platform across key cinema areas to generate insights for staffing and resource optimization.</p>
             <div class="project-meta">
+              <div><span class="m-label">Role</span><span class="m-val">Client Project Manager</span></div>
               <div><span class="m-label">Budget</span><span class="m-val">$125,000 USD</span></div>
               <div><span class="m-label">Duration</span><span class="m-val">6 months</span></div>
               <div><span class="m-label">Delivered</span><span class="m-val">2025–2026</span></div>
             </div>
-            <div class="project-impact"><strong>Challenge solved:</strong> new server migration to the cloud, executed in parallel with hardware rollout across multiple sites.</div>
-            <div class="project-tags" style="margin-top:16px;">
+            <div class="project-impact"><strong>Challenge solved:</strong> a multi-site camera rollout had to run in parallel with the analytics platform setup, while presenting the resulting insights to business stakeholders in a way that drove staffing decisions.</div>
+            <div class="project-impact project-result"><strong>Result:</strong> AI camera analytics live across key cinema areas, delivering staffing and resource-optimization insights to the client's operations team.</div>
+            <div class="project-tags">
               <span class="tag">Presentations</span>
               <span class="tag tag-cyan">AI Analytics</span>
               <span class="tag tag-cyan">AWS</span>
@@ -407,7 +444,7 @@
           <p class="desc">Fluent collaboration across LATAM &amp; global teams.</p>
           <div class="lang-row">
             <div class="lang-item"><span>Spanish</span><div class="lang-bar"><span style="width:100%;"></span></div><span>Native</span></div>
-            <div class="lang-item"><span>English</span><div class="lang-bar"><span style="width:90%;"></span></div><span>Proficient</span></div>
+            <div class="lang-item"><span>English</span><div class="lang-bar"><span style="width:90%;"></span></div><span>Professional (C1)</span></div>
           </div>
         </div>
       </div>
@@ -423,7 +460,7 @@
 
       <div class="cert-grid">
         <div class="cert-card">
-          <a class="cert-badge" href="https://www.credly.com/badges/3a73d89c-10b9-4aa2-80af-96a538b14071" target="_blank" rel="noopener noreferrer" aria-label="Verify the PMP credential on Credly"><img src="images/cert-pmp.png" alt="PMP certification badge issued by the Project Management Institute"></a>
+          <a class="cert-badge" href="https://www.credly.com/badges/3a73d89c-10b9-4aa2-80af-96a538b14071" target="_blank" rel="noopener noreferrer" aria-label="Verify the PMP credential on Credly"><img src="images/cert-pmp.png" alt="PMP certification badge issued by the Project Management Institute" width="256" height="256" loading="lazy"></a>
           <div>
             <h3>Project Management Professional (PMP)®</h3>
             <div class="cert-issuer">Project Management Institute — PMI.org</div>
@@ -433,7 +470,7 @@
         </div>
 
         <div class="cert-card">
-          <a class="cert-badge" href="https://www.credly.com/badges/aee36dc9-8a92-43cd-8da9-2d4babbbb78f" target="_blank" rel="noopener noreferrer" aria-label="Verify the Professional Scrum Master I credential on Credly"><img src="images/cert-psm.png" alt="Professional Scrum Master I badge issued by Scrum.org"></a>
+          <a class="cert-badge" href="https://www.credly.com/badges/aee36dc9-8a92-43cd-8da9-2d4babbbb78f" target="_blank" rel="noopener noreferrer" aria-label="Verify the Professional Scrum Master I credential on Credly"><img src="images/cert-psm.png" alt="Professional Scrum Master I badge issued by Scrum.org" width="256" height="256" loading="lazy"></a>
           <div>
             <h3>Professional Scrum Master I (PSM I)</h3>
             <div class="cert-issuer">Scrum.org</div>
@@ -444,6 +481,10 @@
       </div>
 
       <ul class="cert-list">
+        <li>
+          <div><span class="cl-name">AWS Cloud Practitioner</span></div>
+          <span class="cl-issuer">Amazon Web Services — in progress, 2026</span>
+        </li>
         <li>
           <div><span class="cl-name">Project Management Diploma</span></div>
           <span class="cl-issuer">Professional Diploma</span>
@@ -502,8 +543,15 @@
   document.getElementById('year').textContent = new Date().getFullYear();
   const toggle = document.querySelector('.nav-toggle');
   const links = document.querySelector('.nav-links');
-  if (toggle) {
-    toggle.addEventListener('click', () => links.classList.toggle('open'));
+  if (toggle && links) {
+    const setOpen = (open) => {
+      links.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    };
+    toggle.addEventListener('click', () => setOpen(!links.classList.contains('open')));
+    links.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
   }
 </script>
 

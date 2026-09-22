@@ -26,6 +26,8 @@
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
+
 <header class="navbar">
   <div class="container">
     <a href="index.html" class="brand">
@@ -35,7 +37,7 @@
         <span class="brand-tag">Project Portfolio</span>
       </span>
     </a>
-    <nav class="nav-links">
+    <nav class="nav-links" id="primary-nav" aria-label="Primary">
       <a href="index.html#profile">Profile</a>
       <a href="index.html#projects">Projects</a>
       <a href="index.html#skills">Skills</a>
@@ -43,13 +45,13 @@
       <a href="index.html#contact">Contact</a>
     </nav>
     <div class="nav-cta">
-      <a href="Antonio-Ochoa-CV.pdf" class="btn btn-primary" download><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> Download CV</a>
+      <a href="Antonio-Ochoa-CV.pdf" class="btn btn-primary" download><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> <span class="btn-label">Download CV</span></a>
     </div>
-    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<main>
+<main id="main">
 
 <!-- ============ HERO ============ -->
 <section class="pd-hero">
@@ -419,8 +421,15 @@
   document.getElementById('year').textContent = new Date().getFullYear();
   const toggle = document.querySelector('.nav-toggle');
   const links = document.querySelector('.nav-links');
-  if (toggle) {
-    toggle.addEventListener('click', () => links.classList.toggle('open'));
+  if (toggle && links) {
+    const setOpen = (open) => {
+      links.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    };
+    toggle.addEventListener('click', () => setOpen(!links.classList.contains('open')));
+    links.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
   }
 </script>
 
