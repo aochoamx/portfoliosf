@@ -2,3 +2,6 @@
 # Local backups of previous CV versions — never publish
 *_back.pdf
 .DS_Store
+# CV source document and office lock files — only the PDF is published
+*.docx
+.~lock.*
